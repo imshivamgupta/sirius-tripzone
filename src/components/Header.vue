@@ -63,12 +63,7 @@ $class: '.header';
   color: #fff;
   /* font-size: 14px; */
   text-align: center;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(19, 51, 87, 1) 100%
-  );
+  @extend %linear-bg;
 
   &__desc {
     font-weight: 300;

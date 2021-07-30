@@ -7,3 +7,12 @@
   display: flex;
   flex-flow: wrap column;
 }
+
+%linear-bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 51, 87, 1) 100%
+  );
+}
