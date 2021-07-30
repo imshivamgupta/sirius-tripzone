@@ -61,7 +61,7 @@ $class: '.header';
 #{$class} {
   padding: 1rem;
   color: #fff;
-  font-size: 14px;
+  /* font-size: 14px; */
   text-align: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
