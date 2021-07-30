@@ -3,6 +3,7 @@
     <Header />
     <Navigation />
     <Welcome />
+    <Weather />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import Welcome from '@/components/Welcome'
+import Weather from '@/components/Weather'
 export default {
   name: 'App',
   components: {
     Header,
     Navigation,
-    Welcome
+    Welcome,
+    Weather
   }
 }
 </script>
