@@ -22,3 +22,21 @@
     rgba(19, 51, 87, 1) 100%
   );
 }
+
+@mixin custom-scroll-bar() {
+  &::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 6px;
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+}
