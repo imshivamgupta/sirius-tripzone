@@ -101,16 +101,24 @@ $class: '.quote';
   @extend %flex-center;
   @extend %flex-col;
   padding: 2rem;
+  @include respond-below(sm) {
+    padding: 2rem 0;
+  }
   &__heading {
     font-family: $roboto-slab;
     font-weight: 500;
     font-size: 1.5rem;
+    @include respond-below(sm) {
+      font-size: 1.2rem;
+    }
   }
 
   &__form {
     margin-top: 2rem;
     width: 30vw;
-
+    @include respond-below(md) {
+      width: 100%;
+    }
     span.success {
       display: block;
       margin-top: 1rem;
