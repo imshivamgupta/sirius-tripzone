@@ -9,10 +9,13 @@
   font-family: $roboto;
 }
 
-// body {
-//   max-width: 1180px;
-//   margin-inline: auto;
-// }
+html,
+body {
+  // max-width: 1180px;
+  // margin-inline: auto;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
 
 img {
   max-width: 100%;

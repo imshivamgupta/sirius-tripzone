@@ -15,6 +15,7 @@ $class: '.container';
   max-width: 1180px;
   padding: 0 1rem;
   &.fluid {
+    padding: 0;
     max-width: 100%;
   }
 }

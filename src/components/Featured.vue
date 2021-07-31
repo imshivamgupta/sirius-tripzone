@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="featured">
+    <div class="featured" id="destinations">
       <h4 class="featured__heading">featured destinations</h4>
       <div class="row">
         <div
@@ -60,6 +60,7 @@ $class: '.featured';
 
   .row {
     margin-top: 1rem;
+    padding-bottom: 1rem;
     @extend %flex-row;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -74,10 +75,15 @@ $class: '.featured';
       margin-right: 1rem;
     }
     img {
-      aspect-ratio: 1/1;
+      aspect-ratio: 1 / 1;
       height: 180px;
       border-radius: 10px;
       border-bottom-left-radius: 0;
+    }
+    p {
+      margin-top: 0.6rem;
+      font-size: 14px;
+      font-weight: 300;
     }
   }
 }

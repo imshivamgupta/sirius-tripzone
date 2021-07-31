@@ -5,6 +5,7 @@
     <Welcome />
     <Weather />
     <Featured />
+    <Promo />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Navigation from '@/components/Navigation'
 import Welcome from '@/components/Welcome'
 import Weather from '@/components/Weather'
 import Featured from '@/components/Featured'
+import Promo from '@/components/Promo'
 export default {
   name: 'App',
   components: {
@@ -21,7 +23,8 @@ export default {
     Navigation,
     Welcome,
     Weather,
-    Featured
+    Featured,
+    Promo
   }
 }
 </script>
