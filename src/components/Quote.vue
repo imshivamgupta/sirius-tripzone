@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="quote">
+    <div class="quote" id="quote">
       <h3 class="quote__heading">Travelling as a group? Get a Quote</h3>
       <form
         class="quote__form"
