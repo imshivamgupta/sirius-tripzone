@@ -55,8 +55,6 @@ export default {
 $class: '.footer';
 
 #{$class} {
-  margin-top: 2rem;
-
   @extend %linear-bg;
   padding: 3rem;
   color: #fff;
