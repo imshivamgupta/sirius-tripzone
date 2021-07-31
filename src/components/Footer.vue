@@ -61,27 +61,47 @@ $class: '.footer';
   padding: 3rem;
   color: #fff;
 
-  h3 {
-    font-weight: 500;
-    margin-bottom: 1rem;
+  @include respond-below(sm) {
+    padding: 1rem;
   }
+
   .row {
     @extend %flex-row;
     justify-content: space-between;
+    @include respond-below(sm) {
+      flex-direction: column;
+    }
     .col {
+      h3 {
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+      ul {
+        li {
+          font-weight: 300;
+          &:not(:last-of-type) {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+
       p {
         font-weight: 300;
         &:first-of-type {
           margin-bottom: 0.3rem;
         }
       }
-    }
-  }
-  ul {
-    li {
-      font-weight: 300;
-      &:not(:last-of-type) {
-        margin-bottom: 0.8rem;
+
+      @include respond-below(lg) {
+        &.col-4 {
+          margin-top: 2.5rem;
+        }
+      }
+
+      @include respond-below(sm) {
+        &:not(:last-of-type) {
+          margin-top: 2.5rem;
+        }
       }
     }
   }

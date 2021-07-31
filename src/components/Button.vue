@@ -11,7 +11,7 @@ $class: '.btn';
   padding: 0.8rem 2rem;
   border-radius: 2px;
   text-transform: uppercase;
-
+  cursor: pointer;
   &.btn-primary {
     color: #fff;
     font-size: 14px;

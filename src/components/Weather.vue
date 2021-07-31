@@ -63,11 +63,17 @@ $class: '.weather';
   }
   .row {
     @extend %flex-row;
+
     .col {
       @extend %flex-center;
       @extend %flex-col;
-      flex: 1;
-      height: 200px;
+      width: 25%;
+      aspect-ratio: 1 / 1;
+
+      @include respond-below(md) {
+        width: 50%;
+        flex-shrink: 0;
+      }
     }
     .col-1 {
       background-color: #0d7e88;
@@ -97,6 +103,9 @@ $class: '.weather';
     h1 {
       font-weight: 500;
       font-size: 4rem;
+      @include respond-below(sm) {
+        font-size: 2rem;
+      }
       margin: 0;
       @extend %flex-row;
       span.degree {
@@ -106,6 +115,13 @@ $class: '.weather';
         border-radius: 100px;
         margin-inline-start: 6px;
         margin-block-start: 10px;
+        @include respond-below(sm) {
+          width: 10px;
+          height: 10px;
+          border-width: 2px;
+          margin-inline-start: 3px;
+          margin-block-start: 5px;
+        }
       }
     }
   }

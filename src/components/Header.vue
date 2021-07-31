@@ -71,5 +71,9 @@ $class: '.header';
     font-weight: 400;
     margin-top: 6px;
   }
+
+  @include respond-below(sm) {
+    font-size: 14px;
+  }
 }
 </style>

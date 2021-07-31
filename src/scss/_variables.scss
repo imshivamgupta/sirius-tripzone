@@ -2,3 +2,11 @@ $roboto-slab: 'Roboto Slab', sans-serif;
 $roboto: 'Roboto', sans-serif;
 
 $primary: #133357;
+
+// Add more screens if required
+$breakpoints: (
+  sm: 520px,
+  md: 768px,
+  lg: 1260px,
+  xlg: 1560px
+);
