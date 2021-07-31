@@ -20,7 +20,7 @@ export default {
   mounted() {
     // Reference from w3schools
     // Set the date we're counting down to
-    var countDownDate = new Date('Aug 10, 2021 18:00:00').getTime()
+    var countDownDate = new Date('Aug 8, 2021 18:00:00').getTime()
 
     // Update the count down every 1 second
     this.interval = setInterval(() => this.calculateTimer(countDownDate), 1000)
@@ -45,7 +45,6 @@ export default {
       this.countdown =
         days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's '
 
-      console.log(this.countdown)
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(this.interval)

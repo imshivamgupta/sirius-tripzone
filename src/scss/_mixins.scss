@@ -8,6 +8,12 @@
   flex-flow: wrap column;
 }
 
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 %linear-bg {
   background: rgb(0, 0, 0);
   background: linear-gradient(

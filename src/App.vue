@@ -4,6 +4,7 @@
     <Navigation />
     <Welcome />
     <Weather />
+    <Featured />
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import Header from '@/components/Header'
 import Navigation from '@/components/Navigation'
 import Welcome from '@/components/Welcome'
 import Weather from '@/components/Weather'
+import Featured from '@/components/Featured'
 export default {
   name: 'App',
   components: {
     Header,
     Navigation,
     Welcome,
-    Weather
+    Weather,
+    Featured
   }
 }
 </script>
